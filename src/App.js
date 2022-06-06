@@ -12,6 +12,13 @@ import Intro from './components/Intro/intro';
 
 import AboutUs from './components/AboutUs/aboutus';
 
+import Services from './components/Services/services';
+
+import Workflow from './components/Workflow/workflow';
+
+import Contact from './components/Contact/contact';
+import Portfolio from './components/PortFolio/portfolio';
+
 function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -23,6 +30,10 @@ function App() {
       <Navbar />
       <Intro />
       <AboutUs />
+      <Services />
+      <Workflow />
+      <Portfolio />
+      <Contact />
     </div>
   );
 }

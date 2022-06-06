@@ -8,7 +8,7 @@ import Resume from './resume.pdf';
 
 const AboutUs = () => {
     return (
-        <div className='aboutus-section'>
+        <div className='about'>
             <div className='img-section'>
                 <img src={avin} alt='icon' className='avin-image' />
             </div>

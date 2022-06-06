@@ -4,6 +4,8 @@ import "./intro.css";
 
 import Vector1 from '../../img/Vector1.png';
 
+import styled, { keyframes } from "styled-components";
+
 import Vector2 from "../../img/Vector2.png";
 
 import boy from "../../img/boy.png";
@@ -28,6 +30,8 @@ import { motion } from "framer-motion";
 
 import { Link } from "react-scroll";
 
+import fadeInUp from "react-animations/lib/fade-in-up";
+
 const Intro = () => {
     // Transition
     const transition = { duration: 2, type: "spring" };
@@ -38,36 +42,38 @@ const Intro = () => {
 
     return (
         <div className="Intro" id="Intro">
-            {/* left name side */}
+
             <div className="i-left">
-                <div className="i-name">
-                    {/* yahan change hy darkmode ka */}
+                <Fade className="i-name">
+
                     <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
                     <span>Avin Mangukiya</span>
                     <span>
                         Frontend Developer with Beginner level in web designing
                         and development, producting the Quality work
                     </span>
-                </div>
-                <Link to="contact" smooth={true} spy={true}>
-                    <button className="button i-button">Hire me</button>
-                </Link>
-                {/* social icons */}
+                </Fade>
+                <Fade>
+                    <Link to="contact" smooth={true} spy={true}>
+                        <button className="button i-button">Hire me</button>
+                    </Link>
+                </Fade>
+
                 <div className="i-icons">
-                <a href="https://github.com/avin1208" target="_blank">
-                    <img src={Github} alt=""/>
-                </a>
+                    <a href="https://github.com/avin1208" target="_blank">
+                        <img src={Github} alt="" />
+                    </a>
                     <img src={LinkedIn} alt="" />
                     <img src={Instagram} alt="" />
                 </div>
             </div>
-            {/* right image side */}
+
             <div className="i-right">
                 <img src={Vector1} alt="" />
                 <img src={Vector2} alt="" />
                 <img src={boy} alt="" />
-                {/* animation */}
-              
+
+
                 <motion.div
                     initial={{ top: "-4%", left: "74%" }}
                     whileInView={{ left: "68%" }}
@@ -79,15 +85,15 @@ const Intro = () => {
 
 
 
-                {/* animation */}
+
                 <motion.div
                     initial={{ left: "9rem", top: "18rem" }}
                     whileInView={{ left: "0rem" }}
                     transition={transition}
                     className="floating-div"
-                    
+
                 >
-                    {/* floatinDiv mein change hy dark mode ka */}
+
                     <FloatinDiv img={thumbup} text1="Great" text2="Learner" />
                 </motion.div>
 
@@ -108,3 +114,5 @@ const Intro = () => {
 };
 
 export default Intro;
+
+const Fade = styled.div`animation: 2s ${keyframes`${fadeInUp}`} ease`;

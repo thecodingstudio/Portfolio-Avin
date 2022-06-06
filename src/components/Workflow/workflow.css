@@ -1,0 +1,36 @@
+.work-flow{
+    margin-bottom: 12rem;
+}
+.work-title{
+    text-align: center;
+}
+
+.work-body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 121.1rem;
+    margin-left: 15rem;
+    margin-top: 3rem;
+    margin-right: 15rem; 
+}
+.flow{
+    width: 10rem;
+    height: 8rem;
+    border-radius: 0.8rem;
+    background: #2b2b2b;
+    padding: 1.8rem 2rem 2.2rem;
+    box-shadow: 0 1.6rem 3.6rem rgb(0 0 0 / 20%);
+    margin-bottom: 2.4rem;
+    cursor: pointer
+}
+
+.flow-title{
+    color: white;
+    margin-top: 1rem;
+}
+.flow-desc{
+    color: white;
+    margin-top: 1rem;
+}
