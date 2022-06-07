@@ -1,13 +1,110 @@
 .portfolio{
     margin-bottom: 15rem;
+    
 }
-
+.sevices-name{
+    color: white;
+}
 
 .port-title{
     text-align: center;
 }
-
 .portfolio-body{
+    margin-left: 30rem;
+    margin-right: 25rem;
+    margin-top: 5rem;
+}
+
+
+.project{
+    display: flex;
+    align-items: center;
+}
+.project1{
+    display: flex;
+    align-items: center;
+    margin-top: 8rem;
+  
+}
+.project2{
+    display: flex;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.image img{
+    box-shadow:  5px 5px 5px 0px grey;
+    border-radius: 0.8rem;
+}
+
+.imagee img{
+    box-shadow:  5px 5px 5px 0px grey;
+    border-radius: 0.8rem;
+    margin-left: 6rem;
+}
+.project-part{
+    margin-left: 5rem;
+}
+
+
+.project-title{
+    font-size: 1.6rem;
+    color: #0fb;
+    margin-right: 50px;
+}
+.project-titlee{
+    font-size: 1.6rem;
+    color: #0fb;
+}
+
+.descrption{
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    color: white;
+}
+
+.project a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    margin-top: 2rem;
+    background: #2371ae;
+    border-radius: 5rem;
+    opacity: 10;
+    background: linear-gradient(90deg,#bb47d4 0,#2371ae);
+}
+.project1 a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    margin-top: 2rem;
+    background: #2371ae;
+    border-radius: 5rem;
+    opacity: 10;
+    background: linear-gradient(90deg,#bb47d4 0,#2371ae);
+}
+
+.project2 a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    margin-top: 2rem;
+    background: #2371ae;
+    border-radius: 5rem;
+    opacity: 10;
+    background: linear-gradient(90deg,#bb47d4 0,#2371ae);
+}
+
+/* .portfolio-body{
     max-width: 100rem;
     margin-left: auto;
     margin-right: auto;
@@ -19,10 +116,10 @@
 .project{
     height: 30rem;
     width:22.5rem;
-    /* border: 1px solid black; */
-}
+    /* border: 1px solid black; 
+}*/
 
-.image{
+/* .image{
     width: 100%;
     height: 100%;
     display: flex;
@@ -35,23 +132,12 @@
     opacity: 15;
     color: #fff;
    opacity: 0.5;
-}
+} */
 
 
-.project a{
-    display: inline-block;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #fff;
-    padding: 0.8rem 2rem;
-    background: #2371ae;
-    border-radius: 5rem;
-    opacity: 10;
-    background: linear-gradient(90deg,#bb47d4 0,#2371ae);
-}
+ 
 
-.project a{
+/* .project a{
     position: absolute;
     margin-top: -100px;
     margin-left: 110px;
@@ -68,4 +154,4 @@
 .image a:hover{
     cursor: pointer;
     background: red;
-}
+}  */

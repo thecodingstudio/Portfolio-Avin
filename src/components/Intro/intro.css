@@ -1,7 +1,8 @@
 .Intro {
     display: flex;
     height: 77vh;
-    margin-top: 6rem;
+    margin-top: 15rem;
+    margin-left: 5rem;
   }
   
   /* left side styling */
@@ -16,21 +17,22 @@
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+    color: white;
   }
   .i-name > :nth-child(1) {
-    color: var(--black);
+    color: white;
     font-weight: bold;
     font-size: 3rem;
   }
   .i-name > :nth-child(2) {
-    color: var(--orange);
+    color: #0fb;
     font-weight: bold;
     font-size: 3rem;
   }
   .i-name > :nth-child(3) {
     font-weight: 400;
     font-size: 14px;
-    color: var(--black);
+    color: white;
     margin-top: 10px;
   }
   .i-button {
@@ -53,6 +55,7 @@
   .i-right {
     flex: 1;
     position: relative;
+    margin-top: 1rem;
   }
   .i-right > * {
     position: absolute;

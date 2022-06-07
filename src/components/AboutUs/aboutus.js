@@ -6,14 +6,28 @@ import avin from '../../img/avin.png';
 
 import Resume from './resume.pdf';
 
+import Aos from 'aos';
+
+import "aos/dist/aos.css";
+
+import { useEffect } from 'react';
+
+
 const AboutUs = () => {
+
+    useEffect(() => {
+        Aos.init({
+            duration: 3000
+        });
+    }, []);
+
     return (
         <div className='about'>
-            <div className='img-section'>
+            <div data-aos="fade-right" className='img-section'>
                 <img src={avin} alt='icon' className='avin-image' />
             </div>
             <div className='about-text'>
-                <div className='about-header'>
+                <div data-aos="fade-up" className='about-header'>
                     <div className='about-inner'>
                         <div className='about-inner-text'>
                             <span className='text'>
@@ -28,26 +42,33 @@ const AboutUs = () => {
                     </div>
                     <div className='text-right'>
                         <p className='text-title'>
-                            I’m Avin Mangukiya, a professional and talented Product Designer with front end development skills
+                            I’m Avin Mangukiya, a Professional and Beginner Product Designer with front end development skills
                         </p>
                         <p className='text-title'>
                             I am passionate about leveraging my diverse backgrounds to decipher challenging problems and create delightful experiences. I honed my skills at web development, technical writing, product design and SEO analytics.
                         </p>
                         <p className='text-title'>
-                            I develop websites with HTML, CSS and JavaScript. I have top skills in using design softwares like Figma, Adobe XD, Invision and PhotoShop; with prototype tools like Framer and Protopie.
+                            I develop websites with HTML, CSS and JavaScript. I have top skills in using design sass and css and also top skills in React js.
                         </p>
                         <p className='text-title'>
                             Being a diligent, hardworking and result oriented lady, I always work towards achieving best result on each project I lay my hands on.
                         </p>
                     </div>
                 </div>
-                <a href={Resume} target="_blank">
-                    <button className="button s-button">Download CV</button>
-                </a>
-                <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
+                <div data-aos="fade-up" className='button-cv'>
+                    <a href={Resume} target="_blank" rel="noreferrer">
+                        <button className="button s-button">Download CV</button>
+                    </a>
+                </div>
             </div>
         </div>
+
     );
 };
 
 export default AboutUs;
+
+
+
+
+

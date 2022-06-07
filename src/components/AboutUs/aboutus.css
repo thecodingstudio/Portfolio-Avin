@@ -10,15 +10,16 @@
 }
 
 .avin-image{
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     filter: drop-shadow(0 1.6rem 1.6rem rgba(51,51,51,.25));
 }
 
 .about-text{
     max-width: 35.5rem;
     overflow: hidden;
-    margin-left: 2rem
+    margin-left: 2rem;
+    margin-top: 2rem;
 }
 .about-header{
     margin-top: 0.3rem;
@@ -35,10 +36,22 @@
     color: #0fb;
     margin-right: 7px;
 }
+
+.aboutme{
+    color: white;
+}
+
+.text-right{
+    color: white;
+}
 .line{
     display: inline-block;
     width: 5rem;
     height: 0.1rem;
     margin-bottom: 0.2rem;
     background: #0fb;
+}
+
+.button-cv button{
+    margin-top: 3rem;
 }

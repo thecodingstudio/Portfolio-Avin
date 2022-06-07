@@ -2,11 +2,25 @@ import React from 'react';
 
 import './workflow.css';
 
+import Aos from 'aos';
+
+import "aos/dist/aos.css";
+
+import { useEffect } from 'react';
+
+
 const Workflow = () => {
+
+    useEffect(() => {
+        Aos.init({
+            duration: 3000
+        });
+    }, []);
+
     return (
         <div className='services'>
             <div className='work-flow'>
-                <div className='work-title'>
+                <div data-aos="fade-right" className='work-title'>
                     <div className='work-inner'>
                         <span className='text'>
                             WORK FLOW
@@ -19,7 +33,7 @@ const Workflow = () => {
                     </h2>
                 </div>
                 <div className='work-body'>
-                    <div className='flow'>
+                    <div data-aos="zoom-in"  className='flow'>
                         <div className="menu-iconc">
                             <img src="https://www.kemiadeleke.com/media/work-idea.svg" className="image-explore" alt="icon" />
                         </div>
@@ -30,7 +44,7 @@ const Workflow = () => {
                             I conduct user research to identify the problem I want to solve.
                         </div>
                     </div>
-                    <div className='flow'>
+                    <div data-aos="zoom-in" data-aos-delay="100"  className='flow'>
                         <div className="menu-iconc">
                             <img src="https://www.kemiadeleke.com/media/work-plan.svg" className="image-explore" alt="icon" />
                         </div>
@@ -41,7 +55,7 @@ const Workflow = () => {
                             I brainstorm possible design solutions to the identified problem.
                         </div>
                     </div>
-                    <div className='flow'>
+                    <div data-aos="zoom-in" data-aos-delay="200"  className='flow'>
                         <div className="menu-iconc">
                             <img src="https://www.kemiadeleke.com/media/work-sketch.svg" className="image-explore" alt="icon" />
                         </div>
@@ -52,7 +66,7 @@ const Workflow = () => {
                             I create wireframes and sketches of the product I’m about to design.
                         </div>
                     </div>
-                    <div className='flow'>
+                    <div data-aos="zoom-in" data-aos-delay="300" className='flow'>
                         <div className="menu-iconc">
                             <img src="https://www.kemiadeleke.com/media/work-design.svg" className="image-explore" alt="icon" />
                         </div>
@@ -63,7 +77,7 @@ const Workflow = () => {
                             I create high fidelity design and prototype the screens.
                         </div>
                     </div>
-                    <div className='flow'>
+                    <div data-aos="zoom-in" data-aos-delay="400" className='flow'>
                         <div className="menu-iconc">
                             <img src="https://www.kemiadeleke.com/media/implement.svg" className="image-explore" alt="icon" />
                         </div>

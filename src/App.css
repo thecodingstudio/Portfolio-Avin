@@ -52,17 +52,15 @@
 }
 
 .App{
-    padding: 0.5rem 3.5rem;
     overflow: hidden;
-    color: var(--black);    
+    background-color: #212529;  
 }
 
 .button {
-    background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
-    box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+   background-color: #0fb;
     border-radius: 34px;
     border: none;
-    color: white;
+    color: black;
     font-size: 16px;
     padding: 11px 26px 11px 26px;
   }
@@ -70,8 +68,7 @@
   .button:hover {
     background: white;
     cursor: pointer;
-    border: 1px solid var(--orange);
-    color: var(--orange);
+    color: #0fb;
   }
   @media screen and (max-width: 480px) {
     .App {

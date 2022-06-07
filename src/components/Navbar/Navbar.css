@@ -1,17 +1,36 @@
 .n-wrapper {
-    height: 6vh;
+    height: 8vh;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     top: 0;
+    color: white;
+    background-color: #212529;
+    position: fixed;
+    z-index: 50;
+    width: 100%;
   }
+  /* .n-wrapper2 {
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    top: 0;
+    color: white;
+    background-color: #212529;
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    
+  } */
   .n-left {
     flex: 1;
     align-items: center;
     justify-content: left;
     display: flex;
-    margin-top: 2.5rem;
+    margin-top: 0rem;
     gap: 2rem;
+    margin-left: 5rem;
   }
   /* .icon{
     height: 100px;
@@ -38,7 +57,7 @@
   .n-list > ul {
     display: flex;
     gap: 2rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-right: 4rem;
   }
   

@@ -4,9 +4,9 @@ import './App.css';
 
 import Navbar from './components/Navbar/Navbar';
 
-import { useContext } from 'react';
+// import { useContext } from 'react';
 
-import { themeContext } from './Context';
+// import { themeContext } from './Context';
 
 import Intro from './components/Intro/intro';
 
@@ -17,16 +17,15 @@ import Services from './components/Services/services';
 import Workflow from './components/Workflow/workflow';
 
 import Contact from './components/Contact/contact';
+
 import Portfolio from './components/PortFolio/portfolio';
 
+import Footer from './components/Footer/Footer';
+
 function App() {
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
+  
   return (
-    <div className="App" style={{
-      background: darkMode ? "black" : "",
-      color: darkMode ? "white" : "",
-    }}>
+    <div className="App">
       <Navbar />
       <Intro />
       <AboutUs />
@@ -34,6 +33,7 @@ function App() {
       <Workflow />
       <Portfolio />
       <Contact />
+      <Footer />
     </div>
   );
 }

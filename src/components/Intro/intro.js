@@ -1,10 +1,9 @@
-import React, { useContext } from "react";
+import React from "react";
 
 import "./intro.css";
 
 import Vector1 from '../../img/Vector1.png';
 
-import styled, { keyframes } from "styled-components";
 
 import Vector2 from "../../img/Vector2.png";
 
@@ -24,68 +23,77 @@ import LinkedIn from "../../img/linkedin.png";
 
 import Instagram from "../../img/instagram.png";
 
-import { themeContext } from "../../Context";
-
 import { motion } from "framer-motion";
 
 import { Link } from "react-scroll";
 
-import fadeInUp from "react-animations/lib/fade-in-up";
+import Aos from 'aos';
+
+import "aos/dist/aos.css";
+
+import { useEffect } from 'react';
+
+
 
 const Intro = () => {
     // Transition
     const transition = { duration: 2, type: "spring" };
 
-    // context
-    const theme = useContext(themeContext);
-    const darkMode = theme.state.darkMode;
+    useEffect(() => {
+        Aos.init({
+            duration: 3000
+        });
+    }, []);
 
+  
+    
     return (
         <div className="Intro" id="Intro">
 
             <div className="i-left">
-                <Fade className="i-name">
+                <div data-aos="fade-up" className="i-name">
 
-                    <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
+                    <span>Hello..! I Am</span>
                     <span>Avin Mangukiya</span>
                     <span>
                         Frontend Developer with Beginner level in web designing
-                        and development, producting the Quality work
+                        and development, producting the Quality work..
                     </span>
-                </Fade>
-                <Fade>
+                </div>
+                <div data-aos="fade-up">
                     <Link to="contact" smooth={true} spy={true}>
                         <button className="button i-button">Hire me</button>
                     </Link>
-                </Fade>
+                </div>
 
                 <div className="i-icons">
-                    <a href="https://github.com/avin1208" target="_blank">
+                    <a href="https://github.com/avin1208" target="_blank" rel="noreferrer">
                         <img src={Github} alt="" />
                     </a>
+                    <a href="https://www.linkedin.com/in/avin-mangukiya-229445215" target="_blank" rel="noreferrer">
                     <img src={LinkedIn} alt="" />
+                    </a>
+                    <a href="https://instagram.com/_.mangukiya_.12?igshid=YmMyMTA2M2Y=" target="_blank" rel="noreferrer">
                     <img src={Instagram} alt="" />
+                    </a>
                 </div>
             </div>
 
-            <div className="i-right">
+            <div data-aos="fade-left" className="i-right">
                 <img src={Vector1} alt="" />
                 <img src={Vector2} alt="" />
+             
                 <img src={boy} alt="" />
-
+             
 
                 <motion.div
                     initial={{ top: "-4%", left: "74%" }}
-                    whileInView={{ left: "68%" }}
+                    whileInView={{ left: "48%" }}
                     transition={transition}
                     className="floating-div"
                 >
                     <FloatinDiv img={crown} text1="React Js" text2="Developer" />
                 </motion.div>
-
-
-
-
                 <motion.div
                     initial={{ left: "9rem", top: "18rem" }}
                     whileInView={{ left: "0rem" }}
@@ -93,26 +101,11 @@ const Intro = () => {
                     className="floating-div"
 
                 >
-
                     <FloatinDiv img={thumbup} text1="Great" text2="Learner" />
                 </motion.div>
-
-                <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
-                <div
-                    className="blur"
-                    style={{
-                        background: "#C1F5FF",
-                        top: "17rem",
-                        width: "21rem",
-                        height: "11rem",
-                        left: "-9rem",
-                    }}
-                ></div>
             </div>
         </div>
     );
 };
 
 export default Intro;
-
-const Fade = styled.div`animation: 2s ${keyframes`${fadeInUp}`} ease`;

@@ -1,27 +1,44 @@
-import React,{useRef} from 'react';
+import React, { useRef} from 'react';
 
 import emailjs from '@emailjs/browser';
 
 import './contact.css';
 
+import Aos from 'aos';
+
+import "aos/dist/aos.css";
+
+import { useEffect } from 'react';
+
 const Contact = () => {
+
     const form = useRef();
 
     const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs.sendForm('service_6gurbo8', 'template_ldp19u6', form.current, '0U2WIm6HUmlFCjtZv')
-        .then((result) => {
-            console.log(result.text);
-            console.log("message Sent");
-        }, (error) => {
-            console.log(error.text);
-        });
+        e.preventDefault();
+
+        emailjs.sendForm('service_6gurbo8', 'template_ldp19u6', form.current, '0U2WIm6HUmlFCjtZv')
+            .then((result) => {
+                console.log(result.text);
+                alert("Your message has been submitted👍");
+                form.reset();
+            }, (error) => {
+                console.log(error.text);
+                alert("Please Try Again");
+            });
     };
+
+    useEffect(() => {
+        Aos.init({
+            duration: 2000
+        });
+    }, []);
+
     return (
-        <div className='contact'>
+
+        <div className='contact' id='contact'>
             <div className='contact-form'>
-                <div className='con-title'>
+                <div data-aos="fade-right" className='con-title'>
                     <div className='con-inner'>
                         <span className='text'>
                             Contact Me
@@ -36,7 +53,7 @@ const Contact = () => {
                 <div className='contact-body'>
                     <div className='contact-left'>
                         <div className='left-icons'>
-                            <div className="left">
+                            <div data-aos="fade-up" className="left">
                                 <div className="location-icon">
                                     <img src="https://www.kemiadeleke.com/media/contact-address.svg" className="image-explore" alt="icon" />
                                 </div>
@@ -44,7 +61,7 @@ const Contact = () => {
                                     Surat, Gujarat, India.
                                 </div>
                             </div>
-                            <div className="left">
+                            <div data-aos="fade-up" data-aos-delay="200" className="left">
                                 <div className="email-icon">
                                     <img src="https://www.kemiadeleke.com/media/contact-email.svg" className="image-explore" alt="icon" />
                                 </div>
@@ -53,18 +70,20 @@ const Contact = () => {
                                 </div>
                             </div>
                         </div>
-                        <form className='contact-form'  ref={form} onSubmit={sendEmail}>
-                            <input type="text" placeholder="Full Name" name="user_name" required />
+                        <div>
+                            <form className='contact-form' ref={form} onSubmit={sendEmail}>
+                                <input  data-aos="fade-up" type="text" placeholder="Full Name" name="user_name" required />
 
-                            <div className='abc'>
-                                <input type="email" placeholder="Email" name="uesr_email" required />
-                                <input type="number" placeholder="Phone Number" name="user_number" required />
-                            </div>
+                                <div className='abc'>
+                                    <input data-aos="fade-up" data-aos-delay="100" type="email" placeholder="Email" name="uesr_email" required />
+                                    <input data-aos="fade-up" data-aos-delay="200" type="number" placeholder="Phone Number" name="user_number" required />
+                                </div>
 
-                            <textarea name="message" cols="25" row="10" placeholder="Enter Your Message" />
+                                <textarea data-aos="fade-up" data-aos-delay="300" name="message" cols="25" row="10" placeholder="Enter Your Message" required />
 
-                            <button>Submit</button>
-                        </form>
+                                <button data-aos="fade-up" data-aos-delay="400" >Submit</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

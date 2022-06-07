@@ -1,12 +1,25 @@
 import React from 'react';
 
-import './services.css'
+import './services.css';
+
+import Aos from 'aos';
+
+import "aos/dist/aos.css";
+
+import { useEffect } from 'react';
 
 const Services = () => {
+
+    useEffect(() => {
+        Aos.init({
+            duration: 2000
+        });
+    }, []);
+
     return (
         <div className='services-main'>
             <div className='services'>
-                <div className='ser-title'>
+                <div data-aos="fade-right" className='ser-title'>
                     <div className='ser-inner'>
                         <span className='text'>
                             WHAT I DO
@@ -19,7 +32,7 @@ const Services = () => {
                     </h2>
                 </div>
                 <div className='services-body'>
-                    <div className="one">
+                    <div data-aos="fade-up" className="one">
                         <div className="menu-icon">
                             <img src="https://www.kemiadeleke.com/media/react-logo.svg" className="image-explore" alt="icon" />
                         </div>
@@ -32,7 +45,7 @@ const Services = () => {
                         <div className='bottem-line'>
                         </div>
                     </div>
-                    <div className="one">
+                    <div data-aos="fade-up" data-aos-delay="100" className="one">
                         <div className="menu-iconn">
                             <img src="https://www.kemiadeleke.com/media/brackets.svg" className="image-explore" alt="icon" />
                         </div>
@@ -45,15 +58,15 @@ const Services = () => {
                         <div className='bottem-linee'>
                         </div>
                     </div>
-                    <div className="one">
+                    <div data-aos="fade-up" data-aos-delay="200" className="one">
                         <div className="menu-icono">
                             <img src="https://www.kemiadeleke.com/media/digital-marketing.svg" className="image-explore" alt="icon" />
                         </div>
                         <div className="menu-title">
-                        Mobile-friendly
+                            Mobile-friendly
                         </div>
                         <div className="menu-desc">
-                        A responsive design makes your website accessible to all users, regardless of their device.
+                            A responsive design makes your website accessible to all users, regardless of their device.
                         </div>
                         <div className='bottem-linen'>
                         </div>
@@ -61,6 +74,7 @@ const Services = () => {
                 </div>
             </div>
         </div>
+
     )
 }
 
