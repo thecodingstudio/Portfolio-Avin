@@ -2,10 +2,10 @@ import React from "react";
 
 import "./intro.css";
 
-import Vector1 from '../../img/Vector1.png';
+// import Vector1 from '../../img/Vector1.png';
 
 
-import Vector2 from "../../img/Vector2.png";
+// import Vector2 from "../../img/Vector2.png";
 
 import boyy from "../../img/boyy.png";
 
@@ -79,15 +79,14 @@ const Intro = () => {
             </div>
 
             <div data-aos="fade-left" className="i-right">
-                <img src={Vector1} alt="" />
-                <img src={Vector2} alt="" />
+               
              
                 <img src={boyy} alt="" className="avinm"/>
              
 
                 <motion.div
                     initial={{ top: "-4%", left: "74%" }}
-                    whileInView={{ left: "48%" }}
+                    whileInView={{ left: "58%" }}
                     transition={transition}
                     className="floating-div"
                 >

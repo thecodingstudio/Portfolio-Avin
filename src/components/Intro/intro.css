@@ -85,10 +85,11 @@
   }
 
   .i-right .avinm{
-    height: 300px;
-    margin-top: 5rem;
+    height: 600px;
+    width: 600px;
     border-radius: 100%;
-    left: 30%;
+    left: 12%;
+    top: -20%;
   }
   
   /* blur */

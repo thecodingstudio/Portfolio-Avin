@@ -58,7 +58,7 @@ const Contact = () => {
                                     <img src="https://www.kemiadeleke.com/media/contact-address.svg" className="image-explore" alt="icon" />
                                 </div>
                                 <div className="left-title">
-                                    The Coding Studio <br />
+                                    <span className='studio'>The Coding Studio</span> <br /> 
                                     Surat, Gujarat, India.
                                 </div>
                             </div>

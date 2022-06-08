@@ -58,7 +58,9 @@
     font-size: 1.2rem;
     line-height: 1.9rem;
     text-align: center;
+    flex-direction: column;
 }
+
 
 .contact-form{
     max-width: 100%
