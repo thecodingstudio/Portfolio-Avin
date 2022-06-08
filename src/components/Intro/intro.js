@@ -7,7 +7,7 @@ import Vector1 from '../../img/Vector1.png';
 
 import Vector2 from "../../img/Vector2.png";
 
-import boy from "../../img/boy.png";
+import boyy from "../../img/boyy.png";
 
 // import glassesimoji from "../../img/glassesimoji.png";
 
@@ -56,8 +56,7 @@ const Intro = () => {
                     <span>Hello..! I Am</span>
                     <span>Avin Mangukiya</span>
                     <span>
-                        Frontend Developer with Beginner level in web designing
-                        and development, producting the Quality work..
+                    Frontend Developer at The Coding Studio with expertise in web designing and development, producing the Quality work to entice and engage your users!
                     </span>
                 </div>
                 <div data-aos="fade-up">
@@ -83,7 +82,7 @@ const Intro = () => {
                 <img src={Vector1} alt="" />
                 <img src={Vector2} alt="" />
              
-                <img src={boy} alt="" />
+                <img src={boyy} alt="" className="avinm"/>
              
 
                 <motion.div

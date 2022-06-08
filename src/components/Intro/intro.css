@@ -80,8 +80,15 @@
     transform: scale(0.62);
     top: -19%;
     left: -24%;
-    border-radius: 50%;
+    border-radius: 60%;
     padding: 0;
+  }
+
+  .i-right .avinm{
+    height: 300px;
+    margin-top: 5rem;
+    border-radius: 100%;
+    left: 30%;
   }
   
   /* blur */

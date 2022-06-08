@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 
 import emailjs from '@emailjs/browser';
 
@@ -12,19 +12,12 @@ import { useEffect } from 'react';
 
 const Contact = () => {
 
-    const [num, setNum] = useState('');
-
-    const handleNumChange = event => {
-      const limit = 10;
-      setNum(event.target.value.slice(0, limit));
-    };
-
     const form = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_6gurbo8', 'template_ldp19u6', form.current, '0U2WIm6HUmlFCjtZv')
+        emailjs.sendForm('service_6gurbo8', 'template_ldp19u6', form.current, '0U2WIm6HUmlFCjtZv') 
             .then((result) => {
                 console.log(result.text);
                 alert("Your message has been submitted👍");
@@ -65,6 +58,7 @@ const Contact = () => {
                                     <img src="https://www.kemiadeleke.com/media/contact-address.svg" className="image-explore" alt="icon" />
                                 </div>
                                 <div className="left-title">
+                                    The Coding Studio <br />
                                     Surat, Gujarat, India.
                                 </div>
                             </div>
@@ -73,18 +67,17 @@ const Contact = () => {
                                     <img src="https://www.kemiadeleke.com/media/contact-email.svg" className="image-explore" alt="icon" />
                                 </div>
                                 <div className="left-title">
-                                    avin12.tcs@gmail.com
+                                    hello@thecodingstudio.in
                                 </div>
                             </div>
                         </div>
                         <div>
                             <form className='contact-form' ref={form} onSubmit={sendEmail}>
-                                <input  data-aos="fade-up" type="text" placeholder="Full Name" name="user_name" required />
+                                <input data-aos="fade-up" type="text" placeholder="Full Name" name="user_name" required />
 
                                 <div className='abc'>
                                     <input data-aos="fade-up" data-aos-delay="100" type="email" placeholder="Email" name="uesr_email" required />
-                                    <input data-aos="fade-up" data-aos-delay="200" type="number" placeholder="Phone Number" name="user_number" value={num}
-                                    onChange={handleNumChange} required />
+                                    <input data-aos="fade-up" data-aos-delay="200" type="text" placeholder="Phone Number" name="user_number" pattern="\d{10}" maxlength="10" required />
                                 </div>
 
                                 <textarea data-aos="fade-up" data-aos-delay="300" name="message" cols="25" row="10" placeholder="Enter Your Message" required />

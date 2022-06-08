@@ -4,7 +4,7 @@ import './aboutus.css';
 
 import avin from '../../img/avin.png';
 
-import Resume from './resume.pdf';
+import Resume from './Resume.pdf';
 
 import Aos from 'aos';
 
@@ -42,16 +42,16 @@ const AboutUs = () => {
                     </div>
                     <div className='text-right'>
                         <p className='text-title'>
-                            I’m Avin Mangukiya, a Professional and Beginner Product Designer with front end development skills
+                        I’m Avin Mangukiya, a Professional Product Developer and Designer with front end development skills.
                         </p>
                         <p className='text-title'>
-                            I am passionate about leveraging my diverse backgrounds to decipher challenging problems and create delightful experiences. I honed my skills at web development, technical writing, product design and SEO analytics.
+                        I am passionate about leveraging my diverse backgrounds to decipher challenging problems and create delightful experiences. I honed my skills at web development, technical writing, product design.
                         </p>
                         <p className='text-title'>
-                            I develop websites with HTML, CSS and JavaScript. I have top skills in using design sass and css and also top skills in React js.
+                        I develop websites with HTML, CSS and JavaScript. I have top skills in using design sass and css and also top skills in React js.
                         </p>
                         <p className='text-title'>
-                            Being a diligent, hardworking and result oriented lady, I always work towards achieving best result on each project I lay my hands on.
+                        Being a diligent, hardworking and result oriented developer, I always work towards achieving best result on each project I lay my hands on.
                         </p>
                     </div>
                 </div>
