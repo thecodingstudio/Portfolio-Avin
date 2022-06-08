@@ -130,6 +130,14 @@
       /* display: none; */
       top: -7rem !important;;
     }
+    .i-right .avinm{
+      height: 500px;
+      width: 500px;
+      border-radius: 100%;
+      left: -50%;
+      margin-left: -12rem;
+      top: -100%;
+    }
   }
 
 
