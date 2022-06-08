@@ -37,3 +37,66 @@
 .flow-desc{
     margin-top: 1rem;
 }
+
+@media screen and (max-width: 375px){
+    .work-body{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0rem;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 400px){
+    .work-body{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0rem;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px){
+    .work-body{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0rem;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px){
+    .work-body{
+        display: flex;
+        align-items: center;
+        margin-left: 0rem;
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 900px){
+    .work-body{
+        display: flex;
+        align-items: center;
+        margin-left: 0rem;
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 901px){
+    .work-body{
+        display: flex;
+        align-items: center;
+        margin-left: 0rem;
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+    }
+}

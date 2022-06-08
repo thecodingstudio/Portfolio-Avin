@@ -49,7 +49,7 @@ const Portfolio = () => {
                             </a>
                         </div>
                     </div>
-                    <div data-aos="fade-right" className="project1">
+                    <div data-aos="fade-left" className="project1">
                         <div className="project-partt">
                             <div className="project-titlee">
                                 Crwn Clothing App

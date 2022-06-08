@@ -1,4 +1,4 @@
-import React, { useRef} from 'react';
+import React, { useRef, useState } from 'react';
 
 import emailjs from '@emailjs/browser';
 
@@ -11,6 +11,13 @@ import "aos/dist/aos.css";
 import { useEffect } from 'react';
 
 const Contact = () => {
+
+    const [num, setNum] = useState('');
+
+    const handleNumChange = event => {
+      const limit = 10;
+      setNum(event.target.value.slice(0, limit));
+    };
 
     const form = useRef();
 
@@ -76,7 +83,8 @@ const Contact = () => {
 
                                 <div className='abc'>
                                     <input data-aos="fade-up" data-aos-delay="100" type="email" placeholder="Email" name="uesr_email" required />
-                                    <input data-aos="fade-up" data-aos-delay="200" type="number" placeholder="Phone Number" name="user_number" required />
+                                    <input data-aos="fade-up" data-aos-delay="200" type="number" placeholder="Phone Number" name="user_number" value={num}
+                                    onChange={handleNumChange} required />
                                 </div>
 
                                 <textarea data-aos="fade-up" data-aos-delay="300" name="message" cols="25" row="10" placeholder="Enter Your Message" required />

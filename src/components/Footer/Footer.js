@@ -28,7 +28,7 @@ const Footer = () => {
                 (
                     <div className="footer">
                         <div className="f-content">
-                            <span>avin12.tcs@gmail.com</span>
+                            
                             <div className="f-icons">
                                 <a href="https://instagram.com/_.mangukiya_.12?igshid=YmMyMTA2M2Y=" target="_blank" rel="noreferrer">
                                     <Insta color="white" size={"3rem"} />

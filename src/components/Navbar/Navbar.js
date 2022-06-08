@@ -38,7 +38,7 @@ const Navbar = () => {
                         </li>
                         <li>
                             <Link to="contact" spy={true} smooth={true}>
-                                Contact Me
+                                Contact 
                             </Link>
                         </li>
                     </ul>
