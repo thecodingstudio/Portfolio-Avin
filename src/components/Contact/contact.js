@@ -21,7 +21,7 @@ const Contact = () => {
             .then((result) => {
                 console.log(result.text);
                 alert("Your message has been submitted👍");
-                form.reset();
+                form.current.reset();
             }, (error) => {
                 console.log(error.text);
                 alert("Please Try Again");
