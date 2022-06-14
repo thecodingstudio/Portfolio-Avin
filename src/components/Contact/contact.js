@@ -58,8 +58,8 @@ const Contact = () => {
                                     <img src="https://www.kemiadeleke.com/media/contact-address.svg" className="image-explore" alt="icon" />
                                 </div>
                                 <div className="left-title">
-                                    <span className='studio'>The Coding Studio</span> <br /> 
-                                    Surat, Gujarat, India.
+                                <span className='studio'>The Coding Studio</span> <br /> 
+                                <span>Surat, Gujarat, India.</span>
                                 </div>
                             </div>
                             <div data-aos="fade-up" data-aos-delay="200" className="left">
