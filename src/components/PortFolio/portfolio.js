@@ -44,9 +44,18 @@ const Portfolio = () => {
                                 by creating a dummy pizza hut web app, I create different <br />
                                 types of animation which is important to use in our applications.
                             </div>
-                            <a href="https://avin1208.github.io/React-animation" target="_blank" rel="noreferrer">
-                                View Project
-                            </a>
+                            <div className="project-demo-main">
+                                <div className="project-demo">
+                                    <a href="https://avin1208.github.io/React-animation" target="_blank" rel="noreferrer">
+                                        View Demo
+                                    </a>
+                                </div>
+                                <div className="pro-demo">
+                                    <a href="https://github.com/avin1208/React-animation" target="_blank" rel="noreferrer">
+                                        View Github
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div data-aos="fade-left" className="project1">
@@ -58,9 +67,18 @@ const Portfolio = () => {
                                 A Crwn-Clothing app which is use for Online Shopping <br />
                                 like Men-Women Clothes , Hats, Shoes And Also Jackets.
                             </div>
-                            <a href="https://avin12-live.herokuapp.com/" target="_blank" rel="noreferrer">
-                                View Project
-                            </a>
+                            <div className="project-demo-main">
+                                <div className="project-demo">
+                                    <a href="https://avin12-live.herokuapp.com/" target="_blank" rel="noreferrer">
+                                        View Demo
+                                    </a>
+                                </div>
+                                <div className="pro-demo">
+                                    <a href="https://github.com/avin1208/crwn-clothing" target="_blank" rel="noreferrer">
+                                        View Github
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         <div className="imagee">
                             <img src="https://res.cloudinary.com/dhpvia1ae/image/upload/v1654577596/cloth_1_desjqy.png" alt="icon" />
@@ -78,14 +96,23 @@ const Portfolio = () => {
                                 Monster-Rolodex is My first Project in React. <br />
                                 Starting with this Project to Know How React js Works.
                             </div>
-                            <a href="https://avin1208.github.io/monsters-rolodex" target="_blank" rel="noreferrer">
-                                View Project
-                            </a>
+                            <div className="project-demo-main">
+                                <div className="project-demo">
+                                    <a href="https://avin1208.github.io/monsters-rolodex" target="_blank" rel="noreferrer">
+                                        View Demo
+                                    </a>
+                                </div>
+                                <div className="pro-demo">
+                                    <a href="https://github.com/avin1208/monsters-rolodex.git" target="_blank" rel="noreferrer">
+                                        View Github
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
