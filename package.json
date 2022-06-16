@@ -2,7 +2,7 @@
   "name": "avin-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://avin1208.github.io/Portfolio",
+  "homepage": "https://thecodingstudio.github.io/Portfolio-Avin",
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@iconscout/react-unicons": "^1.1.6",
