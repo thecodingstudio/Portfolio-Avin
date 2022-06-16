@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio-Avin/static/css/main.bdc570b4.css",
-    "main.js": "/Portfolio-Avin/static/js/main.d5efc7a6.js",
+    "main.js": "/Portfolio-Avin/static/js/main.35b29e15.js",
     "static/js/787.8d6e9df1.chunk.js": "/Portfolio-Avin/static/js/787.8d6e9df1.chunk.js",
     "static/media/avin.png": "/Portfolio-Avin/static/media/avin.b0fb41fb0a49ab021463.png",
     "static/media/boyy.png": "/Portfolio-Avin/static/media/boyy.930b1b0d2e86736c7738.png",
@@ -10,11 +10,11 @@
     "static/media/crown.png": "/Portfolio-Avin/static/media/crown.dbe416beae9b49b842ab.png",
     "index.html": "/Portfolio-Avin/index.html",
     "main.bdc570b4.css.map": "/Portfolio-Avin/static/css/main.bdc570b4.css.map",
-    "main.d5efc7a6.js.map": "/Portfolio-Avin/static/js/main.d5efc7a6.js.map",
+    "main.35b29e15.js.map": "/Portfolio-Avin/static/js/main.35b29e15.js.map",
     "787.8d6e9df1.chunk.js.map": "/Portfolio-Avin/static/js/787.8d6e9df1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bdc570b4.css",
-    "static/js/main.d5efc7a6.js"
+    "static/js/main.35b29e15.js"
   ]
 }
